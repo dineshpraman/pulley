@@ -23,15 +23,28 @@ define( function( require ) {
   function SimulationModel() {
 
     PropertySet.call( this, {
+
+      diameter:100,
       state: 'bottom',   //4 states depending on the position of the carton - bottom, moving, top, completed
       running: false,   // true if sim is running, false if sim is not running
+      pulleyType: 'sf',
+      position1:new Vector2(50,100),
+      position2:new Vector2(50,300),
+
     } );
-	}
+
+  }
 
   return inherit( PropertySet, SimulationModel, {
+
     // Resets all model elements
+
     reset: function() {
-		PropertySet.prototype.reset.call( this );
+	PropertySet.prototype.reset.call( this );
+    },
+
+    step: function(dt) {
+
     }
 
   } );

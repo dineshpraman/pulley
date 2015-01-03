@@ -3,6 +3,8 @@
   "gravity-force-lab.name": "Gravity Force Lab",
   "mass1": "Mass 1",
   "mass2": "Mass 2",
+  "sf": "Single Fixed",
+  "sm": "Single Movable",
   "showValues": "Show values",
   "units.kg": "kg",
   "units.meters": "meters",
